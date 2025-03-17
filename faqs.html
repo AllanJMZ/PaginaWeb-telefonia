@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/faqs.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<title>Cellphonia - FAQS</title>
+</head>
+<body>
+        <header>
+            <section class="logo">
+                <img src="resources/header1.jpg" alt="">
+            </section>
+        
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="equipos.html">Equipos</a></li>
+                    <li><a href="resenas.html">Reseñas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="faqs.html">FAQS</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+            <!-- Encabezado -->
+            <div class="header">
+                <h1>Preguntas Frecuentes (FAQs)</h1>
+                <p>Encuentra respuestas a las preguntas más comunes sobre nosotros.</p>
+            </div>
+    
+            <!-- Sección Nosotros -->
+            <div class="section">
+                <h2>Nosotros</h2>
+                <p>
+                    Somos una empresa dedicada a la venta de teléfonos móviles de última generación. Nuestro propósito es ofrecer a nuestros clientes los mejores dispositivos al mejor precio, junto con un servicio de atención al cliente excepcional.
+                </p>
+            </div>
+    
+            <!-- Sección Misión -->
+            <div class="section">
+                <h2>Misión</h2>
+                <p>
+                    Nuestra misión es proporcionar a nuestros clientes acceso a tecnología móvil de vanguardia, brindando productos de alta calidad y un servicio personalizado que supere sus expectativas.
+                </p>
+            </div>
+    
+            <!-- Sección Visión -->
+            <div class="section">
+                <h2>Visión</h2>
+                <p>
+                    Ser reconocidos como la tienda líder en venta de teléfonos móviles, destacándonos por nuestra innovación, compromiso con el cliente y contribución al avance tecnológico.
+                </p>
+            </div>
+    
+            <!-- Preguntas Frecuentes -->
+            <div class="faqs">
+                <h2>Preguntas Frecuentes</h2>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(1)">
+                        <span>¿Qué métodos de pago aceptan?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" id="answer1">
+                        <p>Aceptamos tarjetas de crédito/débito, PayPal y transferencias bancarias.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(2)">
+                        <span>¿Ofrecen envío internacional?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" id="answer2">
+                        <p>Sí, ofrecemos envío internacional a la mayoría de los países.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(3)">
+                        <span>¿Cuál es la política de devoluciones?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" id="answer3">
+                        <p>Aceptamos devoluciones dentro de los 30 días posteriores a la compra, siempre que el producto esté en su estado original.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleAnswer(4)">
+                        <span>¿Cómo puedo contactar al servicio al cliente?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer" id="answer4">
+                        <p>Puedes contactarnos a través de nuestro formulario de contacto, correo electrónico o teléfono.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+</body>
+
+
+<footer>	
+    <section class="footer-icons-container">
+        <p>&copy; 2025 EAJC. Todos los derechos reservados.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="resources/face.png" alt="">
+                <i class="ri-facebook-box-fill"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="resources/xvid.png" alt="">					
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="resources/insta.png" alt="">
+            </a>
+    </section>
+</footer>	
+
+</html>

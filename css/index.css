@@ -1,0 +1,284 @@
+/*GENERAL*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo tenga al menos la altura de la ventana */
+}
+
+/*HEADER*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px 40px 20px;
+    align-items: center;
+    background-color: #000000d2;
+    border: #a8a49ba1;
+    color: #f6f6f7;
+    margin-bottom: 1%;
+    padding-bottom: 1px;
+    width: 100%;
+}
+
+.logo {
+    display: inline-block;
+    width: 40%;
+    text-align: end;
+}
+
+.logo img {
+    width: 320px;
+    margin: 10px;
+
+}
+
+
+.nav ul {
+    margin-right: 50px;
+
+}
+
+.nav li {
+    display: inline-block;
+    background-color: #dfb614;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* CARRITO  */
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+/*-------------------------- Banner -----------------------*/
+
+.banner {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Contenedor de las imágenes y contenido del banner */
+.banner-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.slide img {
+    width: 100%; /* Ancho fijo de la imagen */
+    height: 400px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Asegura que las imágenes cubran el área sin distorsionarse */
+    display: block;
+}
+
+/* Estilos para el texto sobre la imagen */
+.text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.text h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.text p {
+    font-size: 16px;
+}
+
+.text .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.text .btn:hover {
+    background-color: #ff4b24;
+}
+
+/* Estilos para los puntos de navegación */
+.banner-navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #FF5733;
+}
+
+/* Mostrar solo una slide a la vez */
+.slide:not(.active) {
+    display: none;
+}
+
+
+/*  CONTENIDO INICIO  */
+.carousel-container {
+    width: 600px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: 300px; /* Ajusta la altura de las imágenes aquí */
+    object-fit: contain; /* Ajusta el modo de ajuste de la imagen */
+}
+
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+.ver-equipos {
+    text-align: center;
+    margin-top: 10px; /* Reducido el margen superior */
+    margin-bottom: 60PX;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+footer{
+    width: 100%;
+}
+
+footer .footer-icons-container {
+    width: 100%;
+    height: 70px;
+    display: grid;
+    background-color: #333;
+    justify-content: center;
+    color: #fffefe;
+    align-items: center;
+
+}
+
+footer .footer-icons-container .icons {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-content: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+    flex-wrap: wrap;
+}
+
+footer .icons img {
+    width: 30px;
+    color: #00A7E1;
+}
+
+
+

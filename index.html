@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Cellphonia</title>
+</head>
+
+<body>
+
+
+    <!----- Inicia barra de navegación ---------->
+    <header>
+
+
+        <section class="logo">
+            <img src="resources/header1.jpg" alt="">
+        </section>
+    
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="equipos.html">Equipos</a></li>
+                <li><a href="resenas.html">Reseñas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="faqs.html">FAQS</a></li>
+            </ul>
+        </nav>
+
+    <!----- Termina barra de navegación ---------->
+
+  
+</header>
+
+<!-- BANNER -->
+
+<section class="banner">
+    <div class="banner-content">
+        <div class="slide active">
+            <img src="resources/BANNER.jpg" alt="Producto 1">
+        </div>
+        <div class="slide">
+            <img src="resources/accesdorios.jpg" alt="Producto 2">
+        </div>
+        <div class="slide">
+            <img src="resources/banner22.jpg" alt="Producto 3">
+        </div>
+    </div>
+    <div class="banner-navigation">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+</section>
+
+<!-- CARRUSEL PRODUCTOS-->
+
+
+<section class="carousel-container">
+    <div class="carousel-slide">
+        <div class="carousel-item">
+            <img src="resources/samsung1.png" alt="Samsung Galaxy S21 FE">
+            <h3>Samsung Galaxy S21 FE</h3>
+            <p>Desde $499</p>
+        </div>
+        <div class="carousel-item">
+            <img src="resources/samsung4.jpg" alt="Samsung Galaxy A54">
+            <h3>Samsung Galaxy A54</h3>
+            <p>Desde $599</p>
+        </div>
+        <div class="carousel-item">
+            <img src="resources/samsung2.png" alt="Samsung Galaxy S10">
+            <h3>Samsung Galaxy S10</h3>
+            <p>Desde $699</p>
+        </div>
+        <div class="carousel-item">
+            <img src="resources/hua1.jpg" alt="Huawei P50 Pro">
+            <h3>Huawei P50 Pro</h3>
+            <p>Desde $599</p>
+        </div>
+        <div class="carousel-item">
+            <img src="resources/hua2.jpg" alt="Huawei Mate 40 Pro">
+            <h3>Huawei Mate 40 Pro</h3>
+            <p>Desde $699</p>
+        </div>
+        <div class="carousel-item">
+            <img src="resources/xi1.jpg" alt="Xiaomi 13 Pro">
+            <h3>Xiaomi 13 Pro</h3>
+            <p>Desde $699</p>
+        </div>
+    </div>
+    <button id="prevBtn">&#10094;</button>
+    <button id="nextBtn">&#10095;</button>
+</section>
+<div class="ver-equipos">
+    <a href="equipos.html" class="btn">Ver Equipos</a>
+</div>
+
+    <!----- Inicia pie de página ---------->
+	<footer>
+        <section class="footer-icons-container">
+            <p>&copy; 2025 EAJC. Todos los derechos reservados.</p>
+            <div class="icons">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="resources/face.png" alt="">
+                    <i class="ri-facebook-box-fill"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="resources/xvid.png" alt="">					
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="resources/insta.png" alt="">
+                </a>
+        </section>
+	</footer>	
+    <!----- Termina pie de página ---------->
+    <script src="index.js"></script>
+</body>
+
+</html>

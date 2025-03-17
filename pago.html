@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/pago.css" />
+    <link rel="stylesheet" href="css/equipos.css" />
+<title>Casa Bonita - Menu</title>
+</head>
+<body>
+    <main>
+        <header>
+
+
+            <section class="logo">
+                <img src="resources/header1.jpg" alt="">
+            </section>
+        
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="equipos.html">Equipos</a></li>
+                    <li><a href="resenas.html">Reseñas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="faqs.html">FAQS</a></li>
+                    <div class="cart-icon" onclick="toggleCart()">
+                        🛒 <span id="cart-count">0</span>
+                    </div>
+    </header>
+
+<!-- Lista de Productos -->
+<div class="container">
+    <!-- Encabezado -->
+    <div class="header">
+        <h1>Resumen de Compra</h1>
+        <p>Revisa los productos que has agregado al carrito.</p>
+    </div>
+
+    <!-- Lista de Productos -->
+    <div class="cart-items" id="cart-items">
+        <!-- Los productos se añadirán dinámicamente aquí -->
+    </div>
+
+    <!-- Resumen de Total -->
+    <div class="cart-total">
+        <p>Total: <span id="cart-total">$0.00</span></p>
+    </div>
+
+    <!-- Formulario de pago -->
+    <div class="payment-form">
+        <h2>Detalles de Pago</h2>
+
+        <form id="payment-form">
+            <!-- Número de tarjeta -->
+            <div class="form-group">
+                <label for="card-number">Número de tarjeta</label>
+                <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9876 5432" required>
+            </div>
+
+            <!-- Fecha de expiración -->
+            <div class="form-group">
+                <label for="expiry-date">Fecha de expiración</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/AA" required>
+            </div>
+
+            <!-- CCV -->
+            <div class="form-group">
+                <label for="ccv">CCV</label>
+                <input type="text" id="ccv" name="ccv" placeholder="123" required>
+            </div>
+
+            <!-- Iconos de marcas de tarjetas -->
+            <div class="card-brands">
+                <i class="fab fa-visa"></i>
+                <i class="fab fa-mastercard"></i>
+                <i class="fab fa-amex"></i>
+            </div>
+
+            <!-- Botón de Pago -->
+            <button type="submit" class="btn-pay" id="btn-pay">
+                <span>Pagar Ahora</span>
+                <i class="fas fa-arrow-right"></i> <!-- Icono de FontAwesome -->
+            </button>
+        </form>
+    </div>
+
+    <!-- Enlace para seguir comprando -->
+    <div class="continue-shopping">
+        <a href="equipos.html">← Seguir comprando</a>
+    </div>
+</div>
+
+
+    <script>
+        // Obtener el carrito y el total del localStorage
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const total = parseFloat(localStorage.getItem('total')) || 0;
+
+        // Mostrar los productos en la pantalla de pago
+        const cartItems = document.getElementById('cart-items');
+        const cartTotal = document.getElementById('cart-total');
+
+        cart.forEach(item => {
+            const cartItem = document.createElement('div');
+            cartItem.classList.add('cart-item');
+            cartItem.innerHTML = `
+                <img src="${item.image}" alt="${item.name}">
+                <div class="cart-item-info">
+                    <h4>${item.name}</h4>
+                    <p>$${item.price.toFixed(2)}</p>
+                </div>
+            `;
+            cartItems.appendChild(cartItem);
+        });
+
+        // Mostrar el total
+        cartTotal.textContent = `$${total.toFixed(2)}`;
+
+        // Manejar el pago
+        document.getElementById('btn-pay').addEventListener('click', () => {
+            alert('Redirigiendo a la pasarela de pago...');
+            // Aquí puedes redirigir a una pasarela de pago real
+            // window.location.href = 'https://pasarela-de-pago.com';
+        });
+    </script>
+</body>
+
+<footer>	
+    <section class="footer-icons-container">
+        <p>&copy; 2025 EAJC. Todos los derechos reservados.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="resources/face.png" alt="">
+                <i class="ri-facebook-box-fill"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="resources/xvid.png" alt="">					
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="resources/insta.png" alt="">
+            </a>
+    </section>
+</footer>	
+
+</html>

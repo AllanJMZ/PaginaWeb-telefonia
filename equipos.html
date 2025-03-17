@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/equipos.css">
+    <title>Cellphonia - Equipos</title>
+</head>
+
+<body>
+
+
+    <!----- Inicia barra de navegación ---------->
+    <header>
+
+
+        <section class="logo">
+            <img src="resources/header1.jpg" alt="">
+        </section>
+    
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="equipos.html">Equipos</a></li>
+                <li><a href="resenas.html">Reseñas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="faqs.html">FAQS</a></li>
+                <div class="cart-icon" onclick="toggleCart()">
+                    🛒 <span id="cart-count">0</span>
+                </div>
+    
+        <!----- CARRITO ---------->
+
+                
+                <div class="cart-dropdown" id="cart-dropdown">
+                    <h3>Carrito de Compras</h3>
+                    <div class="cart-items" id="cart-items">
+                    </div>
+                    <div class="cart-total">
+                        <p>Total: <span id="cart-total">$0.00</span></p>
+                    </div>
+                    <button class="btn-checkout" id="btn-checkout">Finalizar Compra</button>
+                </div>
+            </ul>
+        </nav>
+
+    <!----- Termina barra de navegación ---------->
+</header>
+
+<!--BANNER-->
+
+<section class="banner">
+    <div class="banner-content">
+        <div class="slide active">
+            <img src="resources/BANNER.jpg" alt="Producto 1">
+        </div>
+        <div class="slide">
+            <img src="resources/accesdorios.jpg" alt="Producto 2">
+        </div>
+        <div class="slide">
+            <img src="resources/banner22.jpg" alt="Producto 3">
+        </div>
+    </div>
+    <div class="banner-navigation">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+</section>
+
+<section class="featured-products">
+    <h2>Productos Destacados</h2>
+    <div class="products">
+        <div class="product">
+            <img src="resources/samsung1.png" alt="Producto 1">
+            <h3>Samsung Galaxy S21 FE</h3>
+            <p>$5000</p>
+            <p>
+                <br>Rendimiento potente: Equipado con un procesador de última generación para una experiencia fluida en juegos y aplicaciones.
+                <br>Cámara de alta calidad: Captura fotos y videos nítidos con su sistema de cámara triple.
+                <br>Pantalla AMOLED: Disfruta de colores vibrantes y negros profundos en su pantalla de alta resolución.
+                <br>Diseño elegante: Un diseño moderno y minimalista que se adapta a tu estilo.
+                <br>Precio accesible: La mejor opción para quienes buscan un smartphone de gama alta a un precio increíble.</p>
+            <a href="#" class="btn">Comprar</a>
+            <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="product">
+            <img src="resources/samsung4.jpg" alt="Producto 2">
+            <h3>Samsung Galaxy A54</h3>
+            <p>$6000</p>
+            <p>
+                <br>Batería de larga duración: Olvídate de quedarte sin energía con su batería de gran capacidad.
+                <br>Almacenamiento expandible: Guarda todas tus fotos, videos y aplicaciones sin preocuparte por el espacio.
+                <br>Pantalla Super AMOLED: Sumérgete en tus contenidos favoritos con una pantalla vibrante y detallada.
+                <br>Cámara versátil: Captura fotos increíbles en cualquier situación con su sistema de cámara cuádruple.
+                Ideal para el día a día: Un smartphone equilibrado que te ofrece todo lo que necesitas para tu vida digital.</p>
+            <a href="#" class="btn">Comprar</a>
+            <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="product">
+            <img src="resources/samsung2.png" alt="Producto 3">
+            <h3>Smartphone Modelo C (Samsung Galaxy S10)</h3>
+            <p>$3000</p>
+            <p>
+                <br>Diseño compacto y elegante: Un smartphone que se adapta perfectamente a tu mano y a tu estilo.
+                <br>Cámara triple de alta calidad: Captura fotos y videos impresionantes con su sistema de cámara versátil.
+                <br>Pantalla Dynamic AMOLED: Disfruta de una experiencia visual inmersiva con colores vibrantes y negros profundos.
+                Rendimiento potente: Un smartphone que te permite realizar múltiples tareas sin problemas.</p>
+            <a href="#" class="btn">Comprar</a>
+            <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="product">
+            <img src="resources/samsung3.jpg" alt="Producto 4">
+            <h3>Samsung Galaxy S11</h3>
+            <p>$4000</p>
+            <p><br>Cámara revolucionaria: Captura fotos y videos increíbles con su sistema de cámara cuádruple, que incluye un sensor principal de 108MP y zoom óptico 5x.
+                <br>Pantalla Dynamic AMOLED 2X: Disfruta de una experiencia visual inmersiva con colores vibrantes, negros.
+                <br>Rendimiento superior: Equipado con el potente procesador Exynos 990 (o Snapdragon 865 en algunas regiones) y hasta 12GB de RAM, el Galaxy S11 te ofrece un rendimiento fluido en cualquier tarea.
+                Batería de larga duración: Olvídate de quedarte sin energía con su batería de gran capacidad y carga rápida de 45W.</p>
+            <a href="#" class="btn">Comprar</a>
+            <br>
+            <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="product">
+            <img src="resources/hua1.jpg" alt="Producto 5">
+            <h3>Huawei P50 Pro</h3>
+            <p>$15000</p>
+            <p><br>Diseño elegante y sofisticado: Un smartphone con un diseño premium y una pantalla curva que se adapta perfectamente a tu mano.
+                <br>Sistema de cámara Dual-Matrix: Captura fotos y videos de calidad profesional con su sistema de cámara Leica de doble matriz.
+                <br>Pantalla OLED de 120Hz: Disfruta de una experiencia visual fluida y vibrante con su pantalla de alta resolución y tasa de refresco.
+                Rendimiento potente: Equipado con el procesador Snapdragon 888 4G, el P50 Pro te ofrece un rendimiento excepcional en cualquier tarea.</p>
+            <a href="#" class="btn">Comprar</a>
+            <br>
+            <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="product">
+            <img src="resources/hua2.jpg" alt="Producto 6">
+            <h3>Huawei Mate 40 Pro</h3>
+            <p>$16000</p>
+            <p><br>Diseño icónico Space Ring: Un smartphone con un diseño distintivo y elegante que destaca por su módulo de cámara circular.
+                <br>Sistema de cámara Ultra Vision: Captura fotos y videos increíbles en cualquier condición de luz con su sistema de cámara Leica de ultra visión.
+                <br>Pantalla Horizon Display: Disfruta de una experiencia visual inmersiva con su pantalla curva de 88 grados.
+                Rendimiento superior: Equipado con el procesador Kirin 9000 5G, el Mate 40 Pro te ofrece un rendimiento de vanguardia.</p>
+            <a href="#" class="btn">Comprar</a>
+            <br>
+            <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="product">
+            <img src="resources/hua3.jpg" alt="Producto 7">
+            <h3>Huawei Nova 9</h3>
+            <p>$7000</p>
+            <p><br>Diseño juvenil y moderno: Un smartphone con un diseño ligero y colorido que se adapta a tu estilo.
+                <br>Sistema de cámara Ultra Vision de 50MP: Captura fotos y videos nítidos y detallados con su cámara principal de alta resolución.
+                <br>Pantalla OLED de 120Hz: Disfruta de una experiencia visual fluida y vibrante con su pantalla de alta resolución y tasa de refresco.
+                Carga rápida SuperCharge de 66W: Carga tu teléfono al 100% en cuestión de minutos.</p>
+            <a href="#" class="btn">Comprar</a>
+            <br>
+            <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="product">
+            <img src="resources/hua4.png" alt="Producto 8">
+            <h3>Huawei P40 Lite</h3>
+            <p>$3000</p>
+            <p><br>Diseño elegante y minimalista: Un smartphone con un diseño limpio y moderno que se adapta a cualquier estilo.
+                <br>Sistema de cámara cuádruple con IA: Captura fotos y videos increíbles en cualquier situación con su sistema de cámara versátil.
+                <br>Pantalla FullView de 6.4 pulgadas: Disfruta de una experiencia visual inmersiva con su pantalla de alta resolución y bordes reducidos.
+                Batería de larga duración: Olvídate de quedarte sin energía con su batería de gran capacidad y carga rápida.</p>
+            <a href="#" class="btn">Comprar</a>
+            <br>
+            <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="product">
+            <img src="resources/xi1.jpg" alt="Producto 9">
+            <h3>Xiaomi 13 Pro</h3>
+            <p>$20000</p>
+            <p><br>Diseño elegante y minimalista: Un smartphone con un diseño premium y una pantalla curva que se adapta perfectamente a tu mano.
+                <br>Sistema de cámara Leica de 50MP: Captura fotos y videos de calidad profesional con su sistema de cámara Leica de triple lente.
+                <br>Pantalla AMOLED de 120Hz: Disfruta de una experiencia visual fluida y vibrante con su pantalla de alta resolución y tasa de refresco.
+                Rendimiento potente: Equipado con el procesador Snapdragon 8 Gen 2, el Xiaomi 13 Pro te ofrece un rendimiento excepcional en cualquier tarea.</p>
+            <a href="#" class="btn">Comprar</a>
+            <br>
+            <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="product">
+            <img src="resources/xi2.jpg" alt="Producto 10">
+            <h3>Xiaomi Redmi Note 12 Pro+ 5G</h3>
+            <p>$8000</p>
+            <p><br>Diseño moderno y colorido: Un smartphone con un diseño llamativo y una parte trasera de cristal que cambia de color con la luz.
+                <br>Cámara principal de 200MP: Captura fotos con un nivel de detalle increíble gracias a su cámara principal de ultra alta resolución.
+                <br>Pantalla AMOLED de 120Hz: Disfruta de una experiencia visual fluida y vibrante con su pantalla de alta resolución y tasa de refresco.
+                Carga rápida HyperCharge de 120W: Carga tu teléfono al 100% en cuestión de minutos.</p>
+            <a href="#" class="btn">Comprar</a>
+            <br>
+            <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="product">
+            <img src="resources/xi3.jpeg" alt="Producto 11">
+            <h3>Xiaomi Poco X5 Pro 5G</h3>
+            <p>$6000</p>
+            <p><br>Diseño deportivo y juvenil: Un smartphone con un diseño resistente y una pantalla con alta tasa de refresco ideal para juegos.
+                <br>Cámara principal de 108MP: Captura fotos nítidas y detalladas con su cámara principal de alta resolución.
+                <br>Pantalla AMOLED de 120Hz: Disfruta de una experiencia visual fluida y vibrante con su pantalla de alta resolución y tasa de refresco.
+                Rendimiento potente: Equipado con el procesador Snapdragon 778G, el Poco X5 Pro 5G te ofrece un rendimiento excelente para juegos y multitarea.</p>
+            <a href="#" class="btn">Comprar</a>
+            <br>
+            <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+        <div class="product">
+            <img src="resources/xi4.jpg" alt="Producto 12">
+            <h3>Xiaomi Redmi A2</h3>
+            <p>$2000</p>
+            <p><br>Diseño sencillo y funcional: Un smartphone ideal para el día a día, con un diseño compacto y una batería de larga duración.
+                <br>Cámara dual de 8MP: Captura fotos y videos decentes para compartir en redes sociales.
+                <br>Pantalla HD+ de 6.52 pulgadas: Disfruta de una experiencia visual agradable para ver videos y navegar por internet.
+                <br>Batería de 5000 mAh: Olvídate de quedarte sin energía durante el día.</p>
+            <a href="#" class="btn">Comprar</a>
+            <br>
+            <a href="#" class="btn">Agregar al carrito</a>
+        </div>
+    </div>
+</section>
+
+    <!----- Inicia pie de página ---------->
+	<footer>
+        <section class="footer-icons-container">
+            <p>&copy; 2025 EAJC. Todos los derechos reservados.</p>
+            <div class="icons">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="resources/face.png" alt="">
+                    <i class="ri-facebook-box-fill"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="resources/xvid.png" alt="">					
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="resources/insta.png" alt="">
+                </a>
+        </section>
+	</footer>	
+    <!----- Termina pie de página ---------->
+    <script src="index.js"></script>
+
+</body>
+
+</html>

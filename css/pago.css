@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Encabezado */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.header p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Lista de Productos */
+.cart-items {
+    margin-bottom: 20px;
+}
+
+/* Resumen de Total */
+.cart-total {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: right;
+}
+
+.cart-total p {
+    margin: 0;
+}
+
+/* Formulario de pago */
+.payment-form {
+    margin-top: 20px;
+}
+
+.payment-form h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.card-brands {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card-brands i {
+    font-size: 24px;
+    color: #555;
+}
+
+/* Botón de Pago */
+.btn-pay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-pay:hover {
+    background-color: #0056b3;
+}
+
+.btn-pay i {
+    margin-left: 10px;
+}
+
+/* Enlace para seguir comprando */
+.continue-shopping {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.continue-shopping a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 16px;
+}
+
+.continue-shopping a:hover {
+    text-decoration: underline;
+}
